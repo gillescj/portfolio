@@ -1,0 +1,29 @@
+.stripe-container {
+    // background: $primary-colour;
+    // transform: skew(0deg, -10deg);
+    .stripe-container-skewed {
+        // transform: skew(0deg, -15deg);
+        .stripe {
+            .stripe-1 {
+                transform: skew(0deg, -12deg);
+                background: $accent-colour-bright;
+                height: 2rem;
+            }
+            .stripe-2 {
+                transform: skew(0deg, -9deg);
+                background: $accent-colour-light;
+                height: 2rem;
+            }
+            .stripe-3 {
+                transform: skew(0deg, -6deg);
+                background: $accent-colour-med;
+                height: 2rem;
+            }
+            .stripe-4 {
+                transform: skew(0deg, -3deg);
+                background: $accent-colour-dark;
+                height: 2rem;
+            }
+        }
+    }
+}

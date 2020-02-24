@@ -1,0 +1,58 @@
+.intro-container {
+    background: $primary-colour;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: minmax(auto, 50rem);
+    padding-bottom: 15rem;
+    .intro {
+        display: grid;
+        grid-gap: 1rem;
+        justify-content: center;
+        color: white;
+        cursor: default;
+        .intro-name {
+            font-size: 5rem;
+            justify-self: center;
+            text-align: center;
+            padding-top: 5rem;
+        }
+        .intro-profession {
+            font-size: 3rem;
+            justify-self: center;
+            text-align: center;
+            margin-bottom: 3rem;
+            border-bottom: 3px solid $accent-colour-light;
+            padding-bottom: 0.25rem;
+            .intro-word {
+                font-family: "Raleway", sans-serif;
+                transition: color 1s ease-in-out 2s;
+                &:hover {
+                    color: $accent-colour-bright;
+                    transition: color 0.5s ease-in-out 0s;
+                    // transition-delay: 2s;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 50rem) {
+    .intro-container {
+        .intro {
+            .intro-name {
+                font-size: 4rem;
+            }
+            .intro-profession {
+                font-size: 2rem;
+                .intro-word {
+                    font-family: "Raleway", sans-serif;
+                    transition: none;
+                    &:hover {
+                        color: white;
+                        transition: none;
+                    }
+                }
+            }
+        }
+    }
+}

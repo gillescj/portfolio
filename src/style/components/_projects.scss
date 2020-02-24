@@ -1,0 +1,78 @@
+.projects-container {
+    display: grid;
+    justify-content: center;
+    background: $primary-colour;
+    padding: 2rem;
+    padding-top: 10rem;
+    color: white;
+    .projects {
+        display: grid;
+        grid-gap: 3rem;
+        .projects-header {
+            padding: 1rem;
+            text-align: center;
+            h2 {
+                font-size: 3rem;
+            }
+        }
+        .project {
+            display: grid;
+            grid-gap: 1rem;
+            .project-info {
+                display: grid;
+                justify-content: center;
+                padding: 1rem;
+                .project-title {
+                    font-family: "Roboto Slab";
+                    font-size: 2rem;
+                    text-align: center;
+                }
+                .project-skills {
+                    text-align: center;
+                }
+            }
+            .project-content {
+                padding: 0 2rem;
+                padding-bottom: 2rem;
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-columns: minmax(10rem, 30rem) minmax(10rem, 30rem);
+                justify-content: center;
+                align-items: center;
+                .project-description {
+                    display: grid;
+                    grid-gap: 1rem;
+                    padding-bottom: 1rem;
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .project-1 {
+            background: rgba(0, 0, 0, 0.4);
+            border: 5px solid $accent-colour-dark;
+        }
+        .project-2 {
+            background: rgba(0, 0, 0, 0.3);
+            border: 5px solid $accent-colour-med;
+        }
+        .project-3 {
+            background: rgba(0, 0, 0, 0.2);
+            border: 5px solid $accent-colour-light;
+        }
+    }
+}
+
+@media only screen and (max-width: 50rem) {
+    .projects-container {
+        .projects {
+            .project {
+                .project-content {
+                    padding: 0 2rem;
+                    grid-template-columns: minmax(10rem, 30rem);
+                }
+            }
+        }
+    }
+}
