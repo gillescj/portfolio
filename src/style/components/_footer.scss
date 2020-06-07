@@ -7,6 +7,10 @@
         .github-link {
             margin: 0.8rem;
             padding: 0.2rem;
+            object {
+                width: 2.5rem;
+                height: 2.5rem;
+            }
             &:hover {
                 filter: brightness(75%);
                 // border-bottom: 3px solid $accent-colour-light;
