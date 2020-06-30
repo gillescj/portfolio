@@ -43,8 +43,9 @@
                 align-items: center;
                 .project-description {
                     display: grid;
-                    grid-gap: 1rem;
-                    padding-bottom: 1rem;
+                    grid-gap: 1.25rem;
+                    padding: 0 2rem;
+                    padding-bottom: 2rem;
                     p {
                         text-align: center;
                     }
@@ -61,6 +62,10 @@
                 .project-content {
                     padding: 0 2rem;
                     grid-template-columns: minmax(10rem, 30rem);
+                    .project-description {
+                        padding: 0;
+                        padding-bottom: 2rem;
+                    }
                 }
             }
         }
