@@ -1,31 +1,17 @@
 .btn-light {
-    color: white;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 1rem 2rem;
-    border: 3px solid white;
-    box-shadow: -3px 5px white;
-    margin: auto;
-    text-align: center;
-    cursor: pointer;
-    &:hover {
-        color: $primary-colour;
-        background: white;
-    }
-}
-
-.btn-dark {
     color: black;
+    background: white;
+    border-radius: 1px;
     font-weight: 600;
     text-decoration: none;
     padding: 1rem 2rem;
-    border: 3px solid black;
-    box-shadow: -3px 5px black;
+    box-shadow: 6px 6px 0 -3px $primary-colour, 6px 6px white;
     margin: auto;
     text-align: center;
     cursor: pointer;
+
     &:hover {
-        color: white;
-        background: black;
+        box-shadow: 3px 3px white, 3px 3px white;
+        transform: translate(3px, 3px);
     }
 }
