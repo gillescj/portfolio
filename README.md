@@ -1,8 +1,6 @@
 # Portfolio
 
-My current portfolio showcasing recent projects.
-
-[Colin Gillespie | Portfolio](https://colingillespie.dev/)
+An outdated version of my portfolio.
 
 ### Installing and Running
 
